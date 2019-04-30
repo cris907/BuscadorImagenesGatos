@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+h1{
+}
+
+#categorias{
+    margin-left: 50px;
+}
+
+select{
+    height: 30px;
+}
+
+#contenedor{
+    margin-left: 30px;
+}
+
+#paginacion{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 482px;
+}
+
+.imagen{
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 250px;
+    min-height: 250px;
+    padding: 7px;
+    background: #ecece9;
+    margin: 5px;
+}
+
+.boton{
+    background-color: #ada4ff;
+    border-color: #15233c;
+    border-radius: 8px;
+    width: 50px;
+    height: 35px;
+    margin-left: 4px;
+}
+
+.boton:hover{
+    background-color: #15233c;
+    border-color: #ada4ff;
+    color: white;
+}
+
+.numPag{
+    background-color: white;
+    border-color: black;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.numPag:hover{
+    border-color: #ff1b00;
+}
