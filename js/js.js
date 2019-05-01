@@ -59,20 +59,18 @@ function crearCategorias(json_recibido){
         option.textContent += json_recibido[i].name;
         //Asignamos el atributo value con el id de cada categoría
         option.setAttribute('value', json_recibido[i].id);
-        
-        //Añadimos evento click a cada opción
-        option.addEventListener('click', seleccionarCategoria, false);
-        
         //Añadimos el elemento option al elemento select creado previamente
         select.appendChild(option);                
     } 
+    //Añadimos evento cuando se cambie la opción seleccionada del select
+    select.addEventListener('change', seleccionarCategoria, false);
 }
 
 
 //Funcion para seleccionar una categoría
-function seleccionarCategoria(e){
+function seleccionarCategoria(){
     //Guardamos en una variable el id de la categoría seleccionada
-    var id = e.target.getAttribute('value');
+    var id = this.value;
 
     //Guardamos en una variable la url de la API para filtrar por categoría
     //Además, añadimos el parámetro limit=50 para coger 50 imágenes
