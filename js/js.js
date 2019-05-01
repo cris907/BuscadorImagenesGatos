@@ -31,7 +31,8 @@ function datos_JSON(url){
 
 
 //Petición AJAX al archivo db.json de categorias
-var urlCategorias = 'http://localhost:3000/categorias';
+//var urlCategorias = 'http://localhost:3000/categorias';
+var urlCategorias = 'https://my-json-server.typicode.com/DWEC-18-19/TheCatApi/categorias';
 datos_JSON(urlCategorias).then(function(json_recibido){
     //Llamamos a la función que muestra el select de categorías
     crearCategorias(json_recibido);
